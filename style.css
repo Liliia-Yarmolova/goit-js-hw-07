@@ -1,0 +1,16 @@
+/* img {
+  display: block;
+} */
+
+.js-list_item img {
+  width: 300px;
+  height: auto;
+}
+
+.js-list {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  list-style: none;
+  justify-content: space-between;
+}

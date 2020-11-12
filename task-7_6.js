@@ -7,14 +7,17 @@
 
 const inputRef = document.querySelector('#validation-input')
 
-//inputRef.addEventListener('focus', checkInput)
+inputRef.addEventListener('blur', checkInput)
 
-// function checkInput(event) {  
-//     let checkCount = inputRef.getAttribute('data-length')
-//     let inputValue = event.currentTarget.value
-//     if (checkCount>= inputValue.l )
+function checkInput(event) {  
+ let checkLength = inputRef.getAttribute('data-length')
+    let inputLength = event.target.value.length
+    if (inputLength >= checkLength) {
+       event.target.classList.add('valid')
+    } else {
+        event.target.classList.add('invalid')
+   }
     
-    
-// }
+ }
 
 

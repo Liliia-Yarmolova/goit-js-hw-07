@@ -3,7 +3,7 @@
 подставляет его текущее значение в span#name-output. Если инпут пустой, в спане должна отображаться строка 'незнакомец'. */
 
 const inputRef = document.querySelector('#name-input')
-const nameToChange = document.querySelector('span')
+const nameToChange = document.querySelector('#name-output')
 inputRef.addEventListener('input', readInput)
 
 function readInput(event) {  

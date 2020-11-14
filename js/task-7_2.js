@@ -38,5 +38,5 @@ const listItem = ingredients.map(ingredient => {
 
 listRef.append(...listItem)
    
-console.log(listRef)
+// console.log(listRef)
     

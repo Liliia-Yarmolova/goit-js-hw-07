@@ -12,6 +12,7 @@ function increment() {
     showResult()
 }
 
+
 function decrement() {
     counterValue -= 1
  showResult()

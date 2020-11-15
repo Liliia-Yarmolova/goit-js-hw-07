@@ -18,6 +18,16 @@ const ingredients = [
 
 const listRef = document.querySelector('#ingredients') 
 
+const listItem = ingredients.map(ingredient => {
+  const listItem = document.createElement('li');
+  listItem.textContent = ingredient
+  return listItem
+})
+
+listRef.append(...listItem)
+
+    
+// =========== Решение задачи через функцию ============
 // const createListItem = (array) => array.map(item => {
 //   const listItem = document.createElement('li');
 //   listItem.textContent = item;
@@ -26,17 +36,3 @@ const listRef = document.querySelector('#ingredients')
 
 // const listItemRef=createListItem(ingredients)
 // listRef.append(...listItemRef)
-// console.log(listItemRef)
-
-
-
-const listItem = ingredients.map(ingredient => {
-  const listItem = document.createElement('li');
-  listItem.textContent = ingredient
-  return listItem
-})
-
-listRef.append(...listItem)
-   
-// console.log(listRef)
-    

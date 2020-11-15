@@ -12,12 +12,14 @@ inputRef.addEventListener('blur', checkInput)
 function checkInput(event) {  
  let checkLength = inputRef.getAttribute('data-length')
     let inputLength = event.target.value.length
-    if (inputLength >= checkLength) {
+    if (inputLength == checkLength) {
        event.target.classList.add('valid')
+       event.target.classList.remove('invalid')
     } else {
-        event.target.classList.add('invalid')
+       event.target.classList.add('invalid')
+       event.target.classList.remove('valid')
    }
-    
+   
  }
 
 

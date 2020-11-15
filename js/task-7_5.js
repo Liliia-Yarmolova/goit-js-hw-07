@@ -7,6 +7,10 @@ const nameToChange = document.querySelector('#name-output')
 inputRef.addEventListener('input', readInput)
 
 function readInput(event) {  
-        nameToChange.textContent = event.currentTarget.value;
+        if (!inputRef.value) {
+                nameToChange.textContent = 'незнакомец'
+        } else {
+                nameToChange.textContent = event.target.value;
+                }
 }
     
